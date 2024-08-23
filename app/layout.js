@@ -4,6 +4,12 @@ import "../styles/main.scss"
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Steps from "@/components/Steps";
+import InvoiceCTA from "@/components/InvoiceCTA";
+import InvoiceTemplates from "@/components/InvoiceTemplates";
+import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import AppFooter from "@/components/AppFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +22,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
-        <Hero/>
-        <Steps/>
+        <Navbar />
+        <Hero />
+        <Steps />
+        <InvoiceCTA />
+        <InvoiceTemplates />
+        <Features />
+        <Pricing />
+        <FAQ />
         {children}
+        <AppFooter />
       </body>
     </html>
   );
